@@ -3,7 +3,7 @@ using System;
 
 namespace HelloWorld {
     abstract class HelloWorld {
-        static void Main(string[] args) {
+        static void Main() {
             ICountry france = new France();
             Console.WriteLine(france.getHelloMessage());
             ICountry unitedKingdom = new UnitedKingdom();

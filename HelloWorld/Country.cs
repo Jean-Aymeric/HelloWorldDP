@@ -3,20 +3,20 @@ using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld {
     public abstract class Country : ICountry {
-        private readonly IBehaviorGetHello behaviorGetHello;
-        private readonly IBehaviorGetDate behaviorGetDate;
+        public IBehaviorGetHello BehaviorGetHello { get; }
+        public IBehaviorGetDate BehaviorGetDate { get; }
 
         public Country(IBehaviorGetHello behaviorGetHello, IBehaviorGetDate behaviorGetDate) {
-            this.behaviorGetHello = behaviorGetHello;
-            this.behaviorGetDate = behaviorGetDate;
+            this.BehaviorGetHello = behaviorGetHello;
+            this.BehaviorGetDate = behaviorGetDate;
         }
 
         public string getHello() {
-            return behaviorGetHello.getHello();
+            return BehaviorGetHello.getHello();
         }
 
         public string getDate() {
-            return behaviorGetDate.getDate();
+            return BehaviorGetDate.getDate();
         }
 
         public string getHelloMessage() {
