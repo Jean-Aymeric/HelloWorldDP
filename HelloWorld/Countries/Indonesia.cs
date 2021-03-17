@@ -1,7 +1,7 @@
-﻿using HelloWorld.Country.BehaviorGetDate;
-using HelloWorld.Country.BehaviorGetHello;
+﻿using HelloWorld.BehaviorGetDate;
+using HelloWorld.BehaviorGetHello;
 
-namespace HelloWorld.Country.Countries {
+namespace HelloWorld.Countries {
     public class Indonesia : Country {
         public Indonesia() : base(new BehaviorGetIndonesianHello(), new BehaviorGetDateType2()) {
         }

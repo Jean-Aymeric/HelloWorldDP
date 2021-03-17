@@ -1,4 +1,4 @@
-﻿namespace HelloWorld.Country {
+﻿namespace HelloWorld {
     interface ICountry : IGetDate, IGetHello {
         string getHelloMessage();
     }

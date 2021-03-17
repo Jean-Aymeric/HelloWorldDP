@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelloWorld.Country {
+namespace HelloWorld {
     interface IGetDate {
         String getDate();
     }

@@ -1,5 +1,4 @@
-﻿using HelloWorld.Country;
-using HelloWorld.Country.Countries;
+﻿using HelloWorld.Countries;
 using System;
 
 namespace HelloWorld {
