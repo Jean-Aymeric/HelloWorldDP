@@ -55,6 +55,7 @@
     <Compile Include="Countries\Indonesia.cs" />
     <Compile Include="Countries\UnitedKingdom.cs" />
     <Compile Include="Countries\France.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
     <Compile Include="ICountry.cs" />
     <Compile Include="IGetDate.cs" />
     <Compile Include="IGetHello.cs" />
