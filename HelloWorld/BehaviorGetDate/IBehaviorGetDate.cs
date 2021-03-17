@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelloWorld.Country.BehaviorGetDate {
+namespace HelloWorld.BehaviorGetDate {
     public interface IBehaviorGetDate {
         String getDate();
     }

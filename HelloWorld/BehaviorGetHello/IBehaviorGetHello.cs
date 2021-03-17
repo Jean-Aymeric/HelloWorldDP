@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelloWorld.Country.BehaviorGetHello {
+namespace HelloWorld.BehaviorGetHello {
     public interface IBehaviorGetHello {
         String getHello();
     }

@@ -43,21 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Country\BehaviorGetDate\BehaviorGetDateType2.cs" />
-    <Compile Include="Country\BehaviorGetDate\BehaviorGetDateType1.cs" />
-    <Compile Include="Country\BehaviorGetDate\IBehaviorGetDate.cs" />
-    <Compile Include="Country\BehaviorGetHello\BehaviorGetindonesianHello.cs" />
-    <Compile Include="Country\BehaviorGetHello\BehaviorGeEnglishHello.cs" />
-    <Compile Include="Country\BehaviorGetHello\BehaviorGetFrenchHello.cs" />
-    <Compile Include="Country\BehaviorGetHello\IBehaviorGetHello.cs" />
-    <Compile Include="Country\Country.cs" />
-    <Compile Include="Country\Countries\UnitedStatesOfAmerica.cs" />
-    <Compile Include="Country\Countries\Indonesia.cs" />
-    <Compile Include="Country\Countries\UnitedKingdom.cs" />
-    <Compile Include="Country\Countries\France.cs" />
-    <Compile Include="Country\ICountry.cs" />
-    <Compile Include="Country\IGetDate.cs" />
-    <Compile Include="Country\IGetHello.cs" />
+    <Compile Include="BehaviorGetDate\BehaviorGetDateType2.cs" />
+    <Compile Include="BehaviorGetDate\BehaviorGetDateType1.cs" />
+    <Compile Include="BehaviorGetDate\IBehaviorGetDate.cs" />
+    <Compile Include="BehaviorGetHello\BehaviorGetindonesianHello.cs" />
+    <Compile Include="BehaviorGetHello\BehaviorGeEnglishHello.cs" />
+    <Compile Include="BehaviorGetHello\BehaviorGetFrenchHello.cs" />
+    <Compile Include="BehaviorGetHello\IBehaviorGetHello.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="Countries\UnitedStatesOfAmerica.cs" />
+    <Compile Include="Countries\Indonesia.cs" />
+    <Compile Include="Countries\UnitedKingdom.cs" />
+    <Compile Include="Countries\France.cs" />
+    <Compile Include="ICountry.cs" />
+    <Compile Include="IGetDate.cs" />
+    <Compile Include="IGetHello.cs" />
     <Compile Include="HelloWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
