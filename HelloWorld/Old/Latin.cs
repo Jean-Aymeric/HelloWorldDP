@@ -1,5 +1,5 @@
 ﻿namespace HelloWorld.Old {
-    class Latin {
+    public class Latin {
         public string ave = "Ave";
     }
 }

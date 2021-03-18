@@ -3,7 +3,7 @@ using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld.Countries {
     public class UnitedKingdom : Country {
-        public UnitedKingdom() : base(new BehaviorGeEnglishHello(), new BehaviorGetDateType1()) {
+        public UnitedKingdom() : base(FactoryBehaviorGetHello.Create(BehaviorGetHelloType.English), FactoryBehaviorGetDate.Create(BehaviorGetDateType.Type1)) {
         }
     }
 }

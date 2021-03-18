@@ -46,11 +46,15 @@
     <Compile Include="AbstractCountry.cs" />
     <Compile Include="BehaviorGetDate\BehaviorGetDateType2.cs" />
     <Compile Include="BehaviorGetDate\BehaviorGetDateType1.cs" />
+    <Compile Include="BehaviorGetDate\FactoryBehaviorGetDate.cs" />
     <Compile Include="BehaviorGetDate\IBehaviorGetDate.cs" />
+    <Compile Include="BehaviorGetHello\BehaviorGetHelloType.cs" />
     <Compile Include="BehaviorGetHello\BehaviorGetindonesianHello.cs" />
     <Compile Include="BehaviorGetHello\BehaviorGeEnglishHello.cs" />
     <Compile Include="BehaviorGetHello\BehaviorGetFrenchHello.cs" />
+    <Compile Include="BehaviorGetHello\FactoryBehaviorGetHello.cs" />
     <Compile Include="BehaviorGetHello\IBehaviorGetHello.cs" />
+    <Compile Include="BehaviorGetDate\BehaviorGetDateType.cs" />
     <Compile Include="Countries\LatinAdapted.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Countries\UnitedStatesOfAmerica.cs" />
