@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace HelloWorld.Decorator {
-    class Border : Decorator {
+    public class Border : Decorator {
         private string BorderString { get; set; }
         public int CharacterNumber { get; }
         public char BorderCharacter { get; }
 
-        public Border(AbstractCountry country, char borderCharacter = '-', int characterNumber = 50) : base(country) {
+        public Border(ICountry country, char borderCharacter = '-', int characterNumber = 50) : base(country) {
             this.CharacterNumber = characterNumber;
             this.BorderCharacter = borderCharacter;
             BorderString = "";

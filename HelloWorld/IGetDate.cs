@@ -2,6 +2,6 @@
 
 namespace HelloWorld {
     interface IGetDate {
-        String getDate();
+        string getDate();
     }
 }

@@ -8,7 +8,7 @@ namespace HelloWorld {
             ICountry france = new Smiley(new France());
             Console.WriteLine(france.getHelloMessage());
 
-            ICountry unitedKingdom = new Border(new UnitedKingdom());
+            ICountry unitedKingdom = new Border(new UnitedKingdom(),'#', 100);
             Console.WriteLine(unitedKingdom.getHelloMessage());
 
             ICountry unitedStatesOfAmerica = new BorderStar(new Smiley(new UnitedStatesOfAmerica()));

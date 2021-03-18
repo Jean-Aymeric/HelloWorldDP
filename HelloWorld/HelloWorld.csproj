@@ -56,7 +56,7 @@
     <Compile Include="Countries\Indonesia.cs" />
     <Compile Include="Countries\UnitedKingdom.cs" />
     <Compile Include="Countries\France.cs" />
-    <Compile Include="Decorator\BorderStar - Copy.cs" />
+    <Compile Include="Decorator\BorderUnderscore.cs" />
     <Compile Include="Decorator\BorderStar.cs" />
     <Compile Include="Decorator\Decorator.cs" />
     <Compile Include="Decorator\Border.cs" />
