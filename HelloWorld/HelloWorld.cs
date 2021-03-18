@@ -17,6 +17,9 @@ namespace HelloWorld {
             ICountry indonesia = new BorderUnderscore(new BorderStar(new Smiley(new Smiley(new Indonesia()))));
             Console.WriteLine(indonesia.getHelloMessage());
 
+            ICountry latin = new BorderUnderscore(new Smiley(new LatinAdapted()));
+            Console.WriteLine(latin.getHelloMessage());
+
             Console.ReadLine();
         }
     }

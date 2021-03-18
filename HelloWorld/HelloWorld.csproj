@@ -51,6 +51,7 @@
     <Compile Include="BehaviorGetHello\BehaviorGeEnglishHello.cs" />
     <Compile Include="BehaviorGetHello\BehaviorGetFrenchHello.cs" />
     <Compile Include="BehaviorGetHello\IBehaviorGetHello.cs" />
+    <Compile Include="Countries\LatinAdapted.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Countries\UnitedStatesOfAmerica.cs" />
     <Compile Include="Countries\Indonesia.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="IGetDate.cs" />
     <Compile Include="IGetHello.cs" />
     <Compile Include="HelloWorld.cs" />
+    <Compile Include="Old\Latin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

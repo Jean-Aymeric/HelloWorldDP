@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace HelloWorld.Decorator {
+﻿namespace HelloWorld.Decorator {
     abstract class Decorator : AbstractCountry {
         public AbstractCountry Country { get; set; }
 

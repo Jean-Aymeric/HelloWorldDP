@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HelloWorld.Decorator {
+﻿namespace HelloWorld.Decorator {
     class Border : Decorator {
         private string BorderString { get; set; }
         public int CharacterNumber { get; }
