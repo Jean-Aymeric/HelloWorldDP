@@ -2,7 +2,7 @@
 using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld {
-    public abstract class Country : ICountry {
+    public abstract class Country : AbstractCountry, IGetDate, IGetHello {
         public IBehaviorGetHello BehaviorGetHello { get; }
         public IBehaviorGetDate BehaviorGetDate { get; }
 
@@ -18,8 +18,7 @@ namespace HelloWorld {
         public string getDate() {
             return BehaviorGetDate.getDate();
         }
-
-        public string getHelloMessage() {
+        public override string getHelloMessage() {
             return getDate() + " : " + getHello();
         }
     }

@@ -1,21 +1,13 @@
 ﻿using System;
 
 namespace HelloWorld.Decorator {
-    class Decorator : ICountry {
-        public ICountry Country { get; set; }
+    abstract class Decorator : AbstractCountry {
+        public AbstractCountry Country { get; set; }
 
-        public Decorator(ICountry country) => this.Country = country;
+        public Decorator(AbstractCountry country) => this.Country = country;
 
-        public string getDate() {
-            throw new NotImplementedException();
-        }
-
-        public string getHello() {
-            throw new NotImplementedException();
-        }
-
-        public string getHelloMessage() {
-            throw new NotImplementedException();
+        public override string getHelloMessage() {
+            return this.Country.getHelloMessage();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿namespace HelloWorld {
-    interface ICountry : IGetDate, IGetHello {
+    interface ICountry {
         string getHelloMessage();
     }
 }

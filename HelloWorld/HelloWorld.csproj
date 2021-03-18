@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractCountry.cs" />
     <Compile Include="BehaviorGetDate\BehaviorGetDateType2.cs" />
     <Compile Include="BehaviorGetDate\BehaviorGetDateType1.cs" />
     <Compile Include="BehaviorGetDate\IBehaviorGetDate.cs" />
@@ -55,7 +56,11 @@
     <Compile Include="Countries\Indonesia.cs" />
     <Compile Include="Countries\UnitedKingdom.cs" />
     <Compile Include="Countries\France.cs" />
+    <Compile Include="Decorator\BorderStar - Copy.cs" />
+    <Compile Include="Decorator\BorderStar.cs" />
     <Compile Include="Decorator\Decorator.cs" />
+    <Compile Include="Decorator\Border.cs" />
+    <Compile Include="Decorator\Smiley.cs" />
     <Compile Include="ICountry.cs" />
     <Compile Include="IGetDate.cs" />
     <Compile Include="IGetHello.cs" />
