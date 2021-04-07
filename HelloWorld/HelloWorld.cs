@@ -1,6 +1,4 @@
 ﻿using HelloWorld.AbstractFactory;
-using HelloWorld.Countries;
-using HelloWorld.Decorator;
 using System;
 
 namespace HelloWorld {
