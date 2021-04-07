@@ -1,23 +1,25 @@
-﻿using HelloWorld.Countries;
+﻿using HelloWorld.AbstractFactory;
+using HelloWorld.Countries;
 using HelloWorld.Decorator;
 using System;
 
 namespace HelloWorld {
     abstract class HelloWorld {
         static void Main() {
-            ICountry france = new Smiley(new France());
+            AbstractFactoryHelloWorld factoryHelloWorld = new FactoryBorderStarSmiley();
+            ICountry france = factoryHelloWorld.makeFrance();
             Console.WriteLine(france.getHelloMessage());
 
-            ICountry unitedKingdom = new Border(new UnitedKingdom());
+            ICountry unitedKingdom = factoryHelloWorld.makeUnitedKingdom();
             Console.WriteLine(unitedKingdom.getHelloMessage());
 
-            ICountry unitedStatesOfAmerica = new BorderStar(new Smiley(new UnitedStatesOfAmerica()));
+            ICountry unitedStatesOfAmerica = factoryHelloWorld.makeUnitedStatesOfAmerica();
             Console.WriteLine(unitedStatesOfAmerica.getHelloMessage());
 
-            ICountry indonesia = new BorderUnderscore(new BorderStar(new Smiley(new Smiley(new Indonesia()))));
+            ICountry indonesia = factoryHelloWorld.makeIndonesia();
             Console.WriteLine(indonesia.getHelloMessage());
 
-            ICountry latin = new BorderUnderscore(new Smiley(new LatinAdapted()));
+            ICountry latin = factoryHelloWorld.makeLatin();
             Console.WriteLine(latin.getHelloMessage());
 
             Console.ReadLine();

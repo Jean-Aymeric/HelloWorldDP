@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractCountry.cs" />
+    <Compile Include="AbstractFactory\AbstractFactoryHelloWorld.cs" />
+    <Compile Include="AbstractFactory\FactorySimple.cs" />
+    <Compile Include="AbstractFactory\FactoryBorderUnderscoreSmiley.cs" />
+    <Compile Include="AbstractFactory\FactoryBorderStarSmiley.cs" />
     <Compile Include="BehaviorGetDate\BehaviorGetDateType2.cs" />
     <Compile Include="BehaviorGetDate\BehaviorGetDateType1.cs" />
     <Compile Include="BehaviorGetDate\FactoryBehaviorGetDate.cs" />
