@@ -2,7 +2,7 @@
 using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld.Countries {
-    public class Indonesia : Country {
+    class Indonesia : Country {
         public Indonesia() : base(FactoryBehaviorGetHello.Create(BehaviorGetHelloType.Indonesian), FactoryBehaviorGetDate.Create(BehaviorGetDateType.Type2)) {
         }
     }
