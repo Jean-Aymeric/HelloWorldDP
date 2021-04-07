@@ -1,5 +1,5 @@
 ﻿namespace HelloWorld.AbstractFactory {
-    abstract class AbstractFactoryHelloWorld {
+    abstract class AbstractFactoryHelloWorld : IAbstractFactoryHelloWorld {
         public abstract ICountry makeLatin();
         public abstract ICountry makeFrance();
         public abstract ICountry makeUnitedKingdom();

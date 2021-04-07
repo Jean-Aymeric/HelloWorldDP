@@ -1,7 +1,8 @@
 ﻿using HelloWorld.AbstractFactory;
+using HelloWorld;
 using System;
 
-namespace HelloWorld {
+namespace Main {
     abstract class HelloWorld {
         static void Main() {
             AbstractFactoryHelloWorld factoryHelloWorld = new FactoryBorderStarSmiley();

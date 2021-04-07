@@ -1,5 +1,4 @@
-﻿using HelloWorld.Countries;
-using HelloWorld.Decorator;
+﻿using HelloWorld.Decorator;
 
 namespace HelloWorld.AbstractFactory {
     class FactoryBorderUnderscoreSmiley : FactoryDecorated {
