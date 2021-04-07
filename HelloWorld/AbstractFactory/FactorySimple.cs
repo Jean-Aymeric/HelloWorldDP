@@ -1,14 +1,15 @@
-﻿using HelloWorld.Countries;
+﻿using HelloWorld.Builder;
+using HelloWorld.Countries;
 using HelloWorld.Decorator;
 
 namespace HelloWorld.AbstractFactory {
     class FactorySimple : AbstractFactoryHelloWorld {
         public override ICountry makeFrance() {
-            return new France();
+            return new BuilderFrenchType1().getCountry();
         }
 
         public override ICountry makeIndonesia() {
-            return new Indonesia();
+            return new BuilderIndonesianType2().getCountry();
         }
 
         public override ICountry makeLatin() {
@@ -16,11 +17,11 @@ namespace HelloWorld.AbstractFactory {
         }
 
         public override ICountry makeUnitedKingdom() {
-            return new UnitedKingdom();
+            return new BuilderUnitedKingdomType1().getCountry();
         }
 
         public override ICountry makeUnitedStatesOfAmerica() {
-            return new UnitedStatesOfAmerica();
+            return new BuilderUnitedStatesOfAmericaType2().getCountry();
         }
     }
 }

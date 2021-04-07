@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AbstractCountry.cs" />
     <Compile Include="AbstractFactory\AbstractFactoryHelloWorld.cs" />
+    <Compile Include="AbstractFactory\FactoryDecorated.cs" />
     <Compile Include="AbstractFactory\FactorySimple.cs" />
     <Compile Include="AbstractFactory\FactoryBorderUnderscoreSmiley.cs" />
     <Compile Include="AbstractFactory\FactoryBorderStarSmiley.cs" />
@@ -59,12 +60,16 @@
     <Compile Include="BehaviorGetHello\FactoryBehaviorGetHello.cs" />
     <Compile Include="BehaviorGetHello\IBehaviorGetHello.cs" />
     <Compile Include="BehaviorGetDate\BehaviorGetDateType.cs" />
-    <Compile Include="Countries\LatinAdapted.cs" />
+    <Compile Include="Builder\BuilderClassicCountry.cs" />
+    <Compile Include="Builder\BuilderCountry.cs" />
+    <Compile Include="Builder\BuilderLatin.cs" />
+    <Compile Include="Builder\BuilderIndonesianType2.cs" />
+    <Compile Include="Builder\BuilderUnitedStatesOfAmericaType2.cs" />
+    <Compile Include="Builder\BuilderUnitedKingdomType1.cs" />
+    <Compile Include="Builder\BuilderFrenchType1.cs" />
+    <Compile Include="Builder\IBuilderCountry.cs" />
     <Compile Include="Countries\Country.cs" />
-    <Compile Include="Countries\UnitedStatesOfAmerica.cs" />
-    <Compile Include="Countries\Indonesia.cs" />
-    <Compile Include="Countries\UnitedKingdom.cs" />
-    <Compile Include="Countries\France.cs" />
+    <Compile Include="Countries\LatinAdapted.cs" />
     <Compile Include="Decorator\BorderUnderscore.cs" />
     <Compile Include="Decorator\BorderStar.cs" />
     <Compile Include="Decorator\Decorator.cs" />
@@ -79,7 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

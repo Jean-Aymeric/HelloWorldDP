@@ -1,5 +1,5 @@
 ﻿namespace HelloWorld {
-    interface ICountry {
+    public interface ICountry {
         string getHelloMessage();
     }
 }

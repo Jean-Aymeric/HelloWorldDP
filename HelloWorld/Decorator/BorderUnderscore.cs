@@ -1,6 +1,6 @@
 ﻿namespace HelloWorld.Decorator {
     class BorderUnderscore : Border {
-        public BorderUnderscore(AbstractCountry country) : base(country, '_', 80) {
+        public BorderUnderscore(ICountry country) : base(country, '_', 80) {
         }
     }
 }

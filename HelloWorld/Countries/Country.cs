@@ -2,7 +2,7 @@
 using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld {
-    public abstract class Country : AbstractCountry, IGetDate, IGetHello {
+    public class Country : AbstractCountry, IGetDate, IGetHello {
         public IBehaviorGetHello BehaviorGetHello { get; }
         public IBehaviorGetDate BehaviorGetDate { get; }
 
