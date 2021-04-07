@@ -1,24 +1,24 @@
-﻿using HelloWorld.AbstractFactory;
-using HelloWorld;
+﻿using HelloWorld;
 using System;
 
 namespace Main {
     abstract class HelloWorld {
         static void Main() {
-            AbstractFactoryHelloWorld factoryHelloWorld = new FactoryBorderStarSmiley();
-            ICountry france = factoryHelloWorld.makeFrance();
+            FacadeHelloWorld facadeHelloWorld = new FacadeHelloWorld();
+            facadeHelloWorld.setFactory(FactoryType.BorderUnderscoreSmiley);
+            ICountry france = facadeHelloWorld.makeFrance();
             Console.WriteLine(france.getHelloMessage());
 
-            ICountry unitedKingdom = factoryHelloWorld.makeUnitedKingdom();
+            ICountry unitedKingdom = facadeHelloWorld.makeUnitedKingdom();
             Console.WriteLine(unitedKingdom.getHelloMessage());
 
-            ICountry unitedStatesOfAmerica = factoryHelloWorld.makeUnitedStatesOfAmerica();
+            ICountry unitedStatesOfAmerica = facadeHelloWorld.makeUnitedStatesOfAmerica();
             Console.WriteLine(unitedStatesOfAmerica.getHelloMessage());
 
-            ICountry indonesia = factoryHelloWorld.makeIndonesia();
+            ICountry indonesia = facadeHelloWorld.makeIndonesia();
             Console.WriteLine(indonesia.getHelloMessage());
 
-            ICountry latin = factoryHelloWorld.makeLatin();
+            ICountry latin = facadeHelloWorld.makeLatin();
             Console.WriteLine(latin.getHelloMessage());
 
             Console.ReadLine();

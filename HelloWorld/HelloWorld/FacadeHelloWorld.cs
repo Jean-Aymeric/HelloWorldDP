@@ -2,25 +2,48 @@
 
 namespace HelloWorld {
     class FacadeHelloWorld : IAbstractFactoryHelloWorld {
-        private AbstractFactoryHelloWorld factory { get; set; }
+        private AbstractFactoryHelloWorld factory;
+
+        public FacadeHelloWorld() {
+            this.setFactory(FactoryType.Simple);
+        }
+
+        public void setFactory(FactoryType type) {
+            switch (type) {
+                case FactoryType.BorderStarSmiley:
+                    this.factory = new FactoryBorderStarSmiley();
+                    break;
+                case FactoryType.BorderUnderscoreSmiley:
+                    this.factory = new FactoryBorderUnderscoreSmiley();
+                    break;
+                default:
+                    this.factory = new FactorySimple();
+                    break;
+            }
+        }
+
+        public ICountry make() {
+            return this.makeFrance();
+        }
+
         public ICountry makeFrance() {
-            throw new System.NotImplementedException();
+            return this.factory.makeFrance();
         }
 
         public ICountry makeIndonesia() {
-            throw new System.NotImplementedException();
+            return this.factory.makeIndonesia();
         }
 
         public ICountry makeLatin() {
-            throw new System.NotImplementedException();
+            return this.factory.makeLatin();
         }
 
         public ICountry makeUnitedKingdom() {
-            throw new System.NotImplementedException();
+            return this.factory.makeUnitedKingdom();
         }
 
         public ICountry makeUnitedStatesOfAmerica() {
-            throw new System.NotImplementedException();
+            return this.factory.makeUnitedStatesOfAmerica();
         }
     }
 }
