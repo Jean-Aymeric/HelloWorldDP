@@ -2,8 +2,8 @@
 
 namespace HelloWorld.AbstractFactory {
     class FactoryBorderUnderscoreSmiley : FactoryDecorated {
-        protected override ICountry makeExtended(string name, ICountry country) {
-            return new BorderUnderscore(new Smiley(this.FactorySimple.make(name)));
+        protected override ICountry makeExtended(ICountry country) {
+            return new BorderUnderscore(new Smiley(country));
         }
     }
 }

@@ -59,7 +59,7 @@ namespace HelloWorld {
             return this.factory.make(name);
         }
 
-        List<string> IAbstractFactoryHelloWorld.getFactoryNames() {
+        public List<string> getFactoryNames() {
             return this.factory.getFactoryNames();
         }
     }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="HelloWorld\AbstractCountry.cs" />
     <Compile Include="HelloWorld\AbstractFactory\AbstractFactoryHelloWorld.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\FactoryDecorated.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryMake.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactorySimple.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryBorderUnderscoreSmiley.cs" />
