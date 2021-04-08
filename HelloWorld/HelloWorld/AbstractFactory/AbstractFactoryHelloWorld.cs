@@ -2,10 +2,24 @@
 
 namespace HelloWorld.AbstractFactory {
     abstract class AbstractFactoryHelloWorld : IAbstractFactoryHelloWorld {
-        private List<FactoryMake> factoryMakes;
+        private readonly List<FactoryMake> factoryMakes = new List<FactoryMake>();
+        protected abstract ICountry makeExtended(string name, ICountry country);
+
+        public AbstractFactoryHelloWorld() {
+            this.add(new MakeFrance());
+            this.add(new MakeUnitedKingdom());
+            this.add(new MakeUnitedStatesOfAmerica());
+            this.add(new MakeIndonesia());
+            this.add(new MakeLatin());
+        }
 
         public ICountry make(string name) {
-            throw new System.NotImplementedException();
+            foreach (FactoryMake factoryMake in factoryMakes) {
+                if (factoryMake.isName(name)) {
+                    return makeExtended(name, factoryMake.make());
+                }
+            }
+            return null;
         }
 
         List<string> IAbstractFactoryHelloWorld.getFactoryNames() {
@@ -14,6 +28,10 @@ namespace HelloWorld.AbstractFactory {
                 listNames.Add(factoryMake.Name);
             }
             return listNames;
+        }
+
+        public void add(FactoryMake factoryMake) {
+            factoryMakes.Add(factoryMake);
         }
     }
 }

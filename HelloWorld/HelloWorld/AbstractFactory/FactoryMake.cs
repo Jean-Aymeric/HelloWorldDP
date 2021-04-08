@@ -2,7 +2,7 @@
     abstract class FactoryMake {
         public string Name { get; set; }
 
-        public abstract ICountry make(string Name);
+        public abstract ICountry make();
 
         public FactoryMake(string name) {
             Name = name;

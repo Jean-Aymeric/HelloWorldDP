@@ -1,9 +1,10 @@
 ﻿using HelloWorld.AbstractFactory;
+using System.Collections.Generic;
 
 namespace HelloWorld {
     class FacadeHelloWorld : IAbstractFactoryHelloWorld {
         private static FacadeHelloWorld instance;
-        private AbstractFactoryHelloWorld factory;
+        private IAbstractFactoryHelloWorld factory;
 
         private FacadeHelloWorld() {
             this.setFactory(FactoryType.Simple);
@@ -55,11 +56,11 @@ namespace HelloWorld {
         }
 
         public ICountry make(string name) {
-            throw new System.NotImplementedException();
+            return this.factory.make(name);
         }
 
-        public string[] getFactoryNames() {
-            throw new System.NotImplementedException();
+        List<string> IAbstractFactoryHelloWorld.getFactoryNames() {
+            return this.factory.getFactoryNames();
         }
     }
 }
