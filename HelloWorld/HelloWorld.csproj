@@ -65,8 +65,8 @@
     <Compile Include="HelloWorld\Builder\BuilderCountry.cs" />
     <Compile Include="HelloWorld\Builder\BuilderLatin.cs" />
     <Compile Include="HelloWorld\Builder\BuilderIndonesianType2.cs" />
-    <Compile Include="HelloWorld\Builder\BuilderUnitedStatesOfAmericaType2.cs" />
-    <Compile Include="HelloWorld\Builder\BuilderUnitedKingdomType1.cs" />
+    <Compile Include="HelloWorld\Builder\BuilderEnglishType2.cs" />
+    <Compile Include="HelloWorld\Builder\BuilderEnglishType1.cs" />
     <Compile Include="HelloWorld\Builder\BuilderFrenchType1.cs" />
     <Compile Include="HelloWorld\Builder\IBuilderCountry.cs" />
     <Compile Include="HelloWorld\Countries\Country.cs" />
