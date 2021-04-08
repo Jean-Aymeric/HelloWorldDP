@@ -35,23 +35,31 @@ namespace HelloWorld {
         }
 
         public ICountry makeFrance() {
-            return this.factory.makeFrance();
+            return this.factory.make("France");
         }
 
         public ICountry makeIndonesia() {
-            return this.factory.makeIndonesia();
+            return this.factory.make("Indonesia");
         }
 
         public ICountry makeLatin() {
-            return this.factory.makeLatin();
+            return this.factory.make("Latin");
         }
 
         public ICountry makeUnitedKingdom() {
-            return this.factory.makeUnitedKingdom();
+            return this.factory.make("UnitedKingdom");
         }
 
         public ICountry makeUnitedStatesOfAmerica() {
-            return this.factory.makeUnitedStatesOfAmerica();
+            return this.factory.make("UnitedStatesOfAmerica");
+        }
+
+        public ICountry make(string name) {
+            throw new System.NotImplementedException();
+        }
+
+        public string[] getFactoryNames() {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -46,10 +46,16 @@
     <Compile Include="HelloWorld\AbstractCountry.cs" />
     <Compile Include="HelloWorld\AbstractFactory\AbstractFactoryHelloWorld.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryDecorated.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\FactoryMake.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactorySimple.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryBorderUnderscoreSmiley.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryBorderStarSmiley.cs" />
     <Compile Include="HelloWorld\AbstractFactory\IAbstractFactoryHelloWorld.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\MakeUnitedKingdom.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\MakeUnitedStatesOfAmerica.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\MakeIndonesia.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\MakeLatin.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\MakeFrance.cs" />
     <Compile Include="HelloWorld\BehaviorGetDate\BehaviorGetDateType2.cs" />
     <Compile Include="HelloWorld\BehaviorGetDate\BehaviorGetDateType1.cs" />
     <Compile Include="HelloWorld\BehaviorGetDate\FactoryBehaviorGetDate.cs" />
@@ -88,6 +94,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="AbstractFactory\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,9 +1,8 @@
-﻿namespace HelloWorld.AbstractFactory {
+﻿using System.Collections.Generic;
+
+namespace HelloWorld.AbstractFactory {
     interface IAbstractFactoryHelloWorld {
-        ICountry makeLatin();
-        ICountry makeFrance();
-        ICountry makeUnitedKingdom();
-        ICountry makeUnitedStatesOfAmerica();
-        ICountry makeIndonesia();
+        ICountry make(string name);
+        List<string> getFactoryNames();
     }
 }

@@ -2,7 +2,7 @@
 using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld.Builder {
-    class BuilderUnitedStatesOfAmericaType2 : BuilderClassicCountry {
+    class BuilderEnglishType2 : BuilderClassicCountry {
         public override IBehaviorGetDate buildBehaviorGetDate() {
             return FactoryBehaviorGetDate.Create(BehaviorGetDateType.Type2);
         }

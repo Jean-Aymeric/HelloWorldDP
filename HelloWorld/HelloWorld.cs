@@ -6,6 +6,7 @@ namespace Main {
         static void Main() {
             FacadeHelloWorld facadeHelloWorld = FacadeHelloWorld.getInstance();
             facadeHelloWorld.setFactory(FactoryType.BorderUnderscoreSmiley);
+
             ICountry france = facadeHelloWorld.makeFrance();
             Console.WriteLine(france.getHelloMessage());
 
