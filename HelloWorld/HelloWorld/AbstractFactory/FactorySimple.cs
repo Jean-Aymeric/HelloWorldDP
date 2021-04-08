@@ -4,11 +4,11 @@ using HelloWorld.Countries;
 namespace HelloWorld.AbstractFactory {
     class FactorySimple : AbstractFactoryHelloWorld {
         public override ICountry makeFrance() {
-            return new BuilderFrenchType1().getCountry();
+            return (Country) new BuilderFrenchType1().getCountry();
         }
 
         public override ICountry makeIndonesia() {
-            return new BuilderIndonesianType2().getCountry();
+            return (Country)new BuilderIndonesianType2().getCountry();
         }
 
         public override ICountry makeLatin() {
@@ -16,11 +16,11 @@ namespace HelloWorld.AbstractFactory {
         }
 
         public override ICountry makeUnitedKingdom() {
-            return new BuilderUnitedKingdomType1().getCountry();
+            return (Country)new BuilderUnitedKingdomType1().getCountry();
         }
 
         public override ICountry makeUnitedStatesOfAmerica() {
-            return new BuilderUnitedStatesOfAmericaType2().getCountry();
+            return (Country)new BuilderUnitedStatesOfAmericaType2().getCountry();
         }
     }
 }
