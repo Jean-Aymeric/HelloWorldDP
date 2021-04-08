@@ -4,7 +4,7 @@ using System;
 namespace Main {
     abstract class HelloWorld {
         static void Main() {
-            FacadeHelloWorld facadeHelloWorld = new FacadeHelloWorld();
+            FacadeHelloWorld facadeHelloWorld = FacadeHelloWorld.getInstance();
             facadeHelloWorld.setFactory(FactoryType.BorderUnderscoreSmiley);
             ICountry france = facadeHelloWorld.makeFrance();
             Console.WriteLine(france.getHelloMessage());

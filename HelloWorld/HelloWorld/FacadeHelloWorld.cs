@@ -2,9 +2,10 @@
 
 namespace HelloWorld {
     class FacadeHelloWorld : IAbstractFactoryHelloWorld {
+        private static FacadeHelloWorld instance;
         private AbstractFactoryHelloWorld factory;
 
-        public FacadeHelloWorld() {
+        private FacadeHelloWorld() {
             this.setFactory(FactoryType.Simple);
         }
 
@@ -20,6 +21,13 @@ namespace HelloWorld {
                     this.factory = new FactorySimple();
                     break;
             }
+        }
+
+        public static FacadeHelloWorld getInstance() {
+            if (instance == null) {
+                instance = new FacadeHelloWorld();
+            }
+            return instance;
         }
 
         public ICountry make() {
