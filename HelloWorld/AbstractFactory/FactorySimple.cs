@@ -17,11 +17,11 @@ namespace HelloWorld.AbstractFactory {
         }
 
         public override ICountry makeUnitedKingdom() {
-            return new BuilderUnitedKingdomType1().getCountry();
+            return new BuilderEnglishType1().getCountry();
         }
 
         public override ICountry makeUnitedStatesOfAmerica() {
-            return new BuilderUnitedStatesOfAmericaType2().getCountry();
+            return new BuilderEnglishType2().getCountry();
         }
     }
 }
