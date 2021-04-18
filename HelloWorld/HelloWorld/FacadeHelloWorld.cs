@@ -1,4 +1,5 @@
 ﻿using HelloWorld.AbstractFactory;
+using HelloWorld.Interpreter;
 using System.Collections.Generic;
 
 namespace HelloWorld {
@@ -60,6 +61,10 @@ namespace HelloWorld {
 
         public ICountry make(string name) {
             return this.factory.make(name);
+        }
+
+        public ICountry makeByParse(string text) {
+            return Parser.parse(text);
         }
 
         public List<string> getFactoryNames() {

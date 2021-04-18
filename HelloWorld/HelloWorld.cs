@@ -5,14 +5,8 @@ using System;
 namespace Main {
     abstract class HelloWorld {
         static void Main() {
-            Context context = new Context();
-
-            IExpression e = new DecoratorExpression("_", new DecoratorExpression("*", new CountryExpression("UK")));
-            e.Interpreter(context);
-            Console.WriteLine(context.Country.getHelloMessage());
-
-            /*
             FacadeHelloWorld facadeHelloWorld = FacadeHelloWorld.getInstance();
+            Console.WriteLine(facadeHelloWorld.makeByParse("FR :) :) - *").getHelloMessage());
             foreach (string countryName in facadeHelloWorld.getFactoryNames()) {
                 Console.WriteLine(facadeHelloWorld.make(countryName).getHelloMessage());
             }
@@ -31,7 +25,7 @@ namespace Main {
             foreach (string countryName in facadeHelloWorld.getFactoryNames()) {
                 Console.WriteLine(facadeHelloWorld.make(countryName).getHelloMessage());
             }
-            */
+            
             Console.ReadLine();
         }
     }

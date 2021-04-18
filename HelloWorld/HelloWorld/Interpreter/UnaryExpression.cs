@@ -6,7 +6,11 @@
         public abstract void Interpreter(Context context);
 
         public UnaryExpression(string name, IExpression expression) {
-            Expression = expression;
+            if (expression == null) {
+                Expression = new ErrorExpression();
+            } else {
+                Expression = expression;
+            }
             Name = name;
         }
     }

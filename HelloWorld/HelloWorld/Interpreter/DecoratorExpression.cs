@@ -19,6 +19,11 @@ namespace HelloWorld.Interpreter {
                 case "*":
                     context.Country = new BorderStar(context.Country);
                     break;
+                default:
+                    if (Name.Length == 1) {
+                        context.Country = new Border(context.Country, Name[0]);
+                    }
+                    break;
             }
         }
     }
