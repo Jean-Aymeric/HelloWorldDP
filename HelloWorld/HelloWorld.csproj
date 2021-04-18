@@ -89,6 +89,11 @@
     <Compile Include="HelloWorld\Countries\IGetDate.cs" />
     <Compile Include="HelloWorld\Countries\IGetHello.cs" />
     <Compile Include="HelloWorld.cs" />
+    <Compile Include="HelloWorld\Interpreter\Context.cs" />
+    <Compile Include="HelloWorld\Interpreter\CountryExpression.cs" />
+    <Compile Include="HelloWorld\Interpreter\IExpression.cs" />
+    <Compile Include="HelloWorld\Interpreter\DecoratorExpression.cs" />
+    <Compile Include="HelloWorld\Interpreter\UnaryExpression.cs" />
     <Compile Include="HelloWorld\Old\Latin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
