@@ -45,11 +45,12 @@
   <ItemGroup>
     <Compile Include="HelloWorld\AbstractCountry.cs" />
     <Compile Include="HelloWorld\AbstractFactory\AbstractFactoryHelloWorld.cs" />
-    <Compile Include="HelloWorld\AbstractFactory\FactoryDecorated.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\FactoryBorderUnderscore.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\FactoryDecorator.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryMake.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactorySimple.cs" />
-    <Compile Include="HelloWorld\AbstractFactory\FactoryBorderUnderscoreSmiley.cs" />
-    <Compile Include="HelloWorld\AbstractFactory\FactoryBorderStarSmiley.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\FactoryBorderStar.cs" />
+    <Compile Include="HelloWorld\AbstractFactory\FactorySmiley.cs" />
     <Compile Include="HelloWorld\AbstractFactory\IAbstractFactoryHelloWorld.cs" />
     <Compile Include="HelloWorld\AbstractFactory\MakeUnitedKingdom.cs" />
     <Compile Include="HelloWorld\AbstractFactory\MakeUnitedStatesOfAmerica.cs" />
@@ -94,8 +95,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AbstractFactory\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

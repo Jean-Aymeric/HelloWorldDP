@@ -3,12 +3,11 @@
 namespace HelloWorld.AbstractFactory {
     abstract class AbstractFactoryHelloWorld : IAbstractFactoryHelloWorld {
         private readonly List<FactoryMake> factoryMakes = new List<FactoryMake>();
-        protected abstract ICountry makeExtended(string name, ICountry country);
 
         public ICountry make(string name) {
             foreach (FactoryMake factoryMake in factoryMakes) {
                 if (factoryMake.isName(name)) {
-                    return makeExtended(name, factoryMake.make());
+                    return factoryMake.make();
                 }
             }
             return null;

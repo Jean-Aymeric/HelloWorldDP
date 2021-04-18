@@ -18,6 +18,12 @@ namespace Main {
             foreach (string countryName in facadeHelloWorld.getFactoryNames()) {
                 Console.WriteLine(facadeHelloWorld.make(countryName).getHelloMessage());
             }
+
+            facadeHelloWorld.setFactory(FactoryType.BorderStarUnderscoreSmiley);
+            foreach (string countryName in facadeHelloWorld.getFactoryNames()) {
+                Console.WriteLine(facadeHelloWorld.make(countryName).getHelloMessage());
+            }
+            
             Console.ReadLine();
         }
     }

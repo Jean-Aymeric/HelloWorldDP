@@ -11,9 +11,5 @@ namespace HelloWorld.AbstractFactory {
             this.add(new MakeIndonesia());
             this.add(new MakeLatin());
         }
-
-        protected override ICountry makeExtended(string name, ICountry country) {
-            return country;
-        }
     }
 }

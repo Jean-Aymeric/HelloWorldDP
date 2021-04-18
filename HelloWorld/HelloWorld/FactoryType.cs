@@ -2,6 +2,7 @@
     public enum FactoryType {
         Simple,
         BorderStarSmiley,
-        BorderUnderscoreSmiley
+        BorderUnderscoreSmiley,
+        BorderStarUnderscoreSmiley
     }
 }

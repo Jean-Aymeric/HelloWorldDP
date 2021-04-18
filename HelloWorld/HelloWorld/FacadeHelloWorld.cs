@@ -13,10 +13,13 @@ namespace HelloWorld {
         public void setFactory(FactoryType type) {
             switch (type) {
                 case FactoryType.BorderStarSmiley:
-                    this.factory = new FactoryBorderStarSmiley();
+                    this.factory = new FactoryBorderStar(new FactorySmiley(new FactorySimple()));
                     break;
                 case FactoryType.BorderUnderscoreSmiley:
-                    this.factory = new FactoryBorderUnderscoreSmiley();
+                    this.factory = new FactoryBorderUnderscore(new FactorySmiley(new FactorySimple()));
+                    break;
+                case FactoryType.BorderStarUnderscoreSmiley:
+                    this.factory = new FactoryBorderStar(new FactoryBorderUnderscore(new FactorySmiley(new FactorySimple())));
                     break;
                 default:
                     this.factory = new FactorySimple();
