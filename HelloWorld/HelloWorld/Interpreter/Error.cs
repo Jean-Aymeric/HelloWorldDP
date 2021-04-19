@@ -1,4 +1,6 @@
-﻿namespace HelloWorld.Interpreter {
+﻿using HelloWorld.Countries;
+
+namespace HelloWorld.Interpreter {
     class Error : AbstractCountry {
         public override string getHelloMessage() {
             return "Error";

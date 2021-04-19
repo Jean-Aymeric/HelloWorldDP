@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HelloWorld\AbstractCountry.cs" />
+    <Compile Include="HelloWorld\Countries\AbstractCountry.cs" />
     <Compile Include="HelloWorld\AbstractFactory\AbstractFactoryHelloWorld.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryBorderUnderscore.cs" />
     <Compile Include="HelloWorld\AbstractFactory\FactoryDecorator.cs" />
@@ -99,6 +99,7 @@
     <Compile Include="HelloWorld\Interpreter\Parser.cs" />
     <Compile Include="HelloWorld\Interpreter\UnaryExpression.cs" />
     <Compile Include="HelloWorld\Old\Latin.cs" />
+    <Compile Include="HelloWorld\ProxyCountry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

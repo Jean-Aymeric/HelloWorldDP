@@ -12,7 +12,7 @@ namespace HelloWorld.Builder {
             return null;
         }
 
-        public override ICountry getCountry() {
+        public override ICountry getCountryExtended() {
             return new LatinAdapted();
         }
     }

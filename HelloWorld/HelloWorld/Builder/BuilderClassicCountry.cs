@@ -2,7 +2,7 @@
 
 namespace HelloWorld.Builder {
     abstract class BuilderClassicCountry : BuilderCountry {
-        public override ICountry getCountry() {
+        public override ICountry getCountryExtended() {
             return new Country(this.buildBehaviorGetHello(), this.buildBehaviorGetDate());
         }
     }

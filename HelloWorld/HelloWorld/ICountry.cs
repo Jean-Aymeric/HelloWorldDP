@@ -1,5 +1,7 @@
-﻿namespace HelloWorld {
-    public interface ICountry {
+﻿using System;
+
+namespace HelloWorld {
+    public interface ICountry : ICloneable {
         string getHelloMessage();
     }
 }
