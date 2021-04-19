@@ -2,11 +2,11 @@
 using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld.Countries {
-    abstract class Bridge : AbstractCountry, IGetDate, IGetHello {
+    abstract class BridgeCountry : AbstractCountry, IGetDate, IGetHello {
         public IBehaviorGetHello BehaviorGetHello { get; }
         public IBehaviorGetDate BehaviorGetDate { get; }
 
-        public Bridge(IBehaviorGetHello behaviorGetHello, IBehaviorGetDate behaviorGetDate) {
+        public BridgeCountry(IBehaviorGetHello behaviorGetHello, IBehaviorGetDate behaviorGetDate) {
             this.BehaviorGetHello = behaviorGetHello;
             this.BehaviorGetDate = behaviorGetDate;
         }

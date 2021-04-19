@@ -2,7 +2,7 @@
 using HelloWorld.BehaviorGetHello;
 
 namespace HelloWorld.Countries {
-    class Country : Bridge {
+    class Country : BridgeCountry {
         public Country(IBehaviorGetHello behaviorGetHello, IBehaviorGetDate behaviorGetDate) : base(behaviorGetHello, behaviorGetDate) { }
 
         public override string getHelloMessage() {
