@@ -1,5 +1,4 @@
 ﻿using HelloWorld;
-using HelloWorld.Interpreter;
 using System;
 
 namespace Main {

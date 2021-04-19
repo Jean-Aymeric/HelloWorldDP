@@ -1,14 +1,24 @@
-﻿namespace HelloWorld.BehaviorGetDate {
+﻿using System.Collections.Generic;
+
+namespace HelloWorld.BehaviorGetDate {
     public class FactoryBehaviorGetDate {
+        private static Dictionary<BehaviorGetDateType, IBehaviorGetDate> Flyweight { get; } = new Dictionary<BehaviorGetDateType, IBehaviorGetDate>();
+        
         public static IBehaviorGetDate Create(BehaviorGetDateType type) {
-            switch (type) {
-                case BehaviorGetDateType.Type1:
-                    return new BehaviorGetDateType1();
-                case BehaviorGetDateType.Type2:
-                    return new BehaviorGetDateType2();
-                default:
-                    return new BehaviorGetDateType1();
+            if (! Flyweight.ContainsKey(type)) {
+                switch (type) {
+                    case BehaviorGetDateType.Type1:
+                        Flyweight[type] = new BehaviorGetDateType1();
+                        break;
+                    case BehaviorGetDateType.Type2:
+                        Flyweight[type] = new BehaviorGetDateType2();
+                        break;
+                    default:
+                        Flyweight[type] = new BehaviorGetDateType1();
+                        break;
+                }
             }
+            return Flyweight[type];
         }
     }
 }
