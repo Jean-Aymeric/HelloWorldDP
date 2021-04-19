@@ -99,7 +99,7 @@
     <Compile Include="HelloWorld\Interpreter\Parser.cs" />
     <Compile Include="HelloWorld\Interpreter\UnaryExpression.cs" />
     <Compile Include="HelloWorld\Old\Latin.cs" />
-    <Compile Include="HelloWorld\Interpreter\ProxyCountry.cs" />
+    <Compile Include="HelloWorld\Countries\ProxyCountry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
