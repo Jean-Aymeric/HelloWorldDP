@@ -1,5 +1,4 @@
-﻿using HelloWorld.BehaviorGetDate;
-using HelloWorld.BehaviorGetHello;
+﻿using HelloWorld.Countries;
 
 namespace HelloWorld.Builder {
     abstract class BuilderClassicCountry : BuilderCountry {

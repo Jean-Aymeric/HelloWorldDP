@@ -1,23 +1,10 @@
 ﻿using HelloWorld.BehaviorGetDate;
 using HelloWorld.BehaviorGetHello;
 
-namespace HelloWorld {
-    public class Country : AbstractCountry, IGetDate, IGetHello {
-        public IBehaviorGetHello BehaviorGetHello { get; }
-        public IBehaviorGetDate BehaviorGetDate { get; }
+namespace HelloWorld.Countries {
+    class Country : Bridge {
+        public Country(IBehaviorGetHello behaviorGetHello, IBehaviorGetDate behaviorGetDate) : base(behaviorGetHello, behaviorGetDate) { }
 
-        public Country(IBehaviorGetHello behaviorGetHello, IBehaviorGetDate behaviorGetDate) {
-            this.BehaviorGetHello = behaviorGetHello;
-            this.BehaviorGetDate = behaviorGetDate;
-        }
-
-        public string getHello() {
-            return BehaviorGetHello.getHello();
-        }
-
-        public string getDate() {
-            return BehaviorGetDate.getDate();
-        }
         public override string getHelloMessage() {
             return getDate() + " : " + getHello();
         }

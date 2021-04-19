@@ -76,6 +76,7 @@
     <Compile Include="HelloWorld\Builder\BuilderEnglishType1.cs" />
     <Compile Include="HelloWorld\Builder\BuilderFrenchType1.cs" />
     <Compile Include="HelloWorld\Builder\IBuilderCountry.cs" />
+    <Compile Include="HelloWorld\Countries\Bridge.cs" />
     <Compile Include="HelloWorld\Countries\Country.cs" />
     <Compile Include="HelloWorld\Countries\LatinAdapted.cs" />
     <Compile Include="HelloWorld\Decorator\BorderUnderscore.cs" />
