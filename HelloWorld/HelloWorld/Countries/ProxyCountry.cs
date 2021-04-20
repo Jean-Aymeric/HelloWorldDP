@@ -1,5 +1,4 @@
-﻿using System;
-namespace HelloWorld.Countries {
+﻿using System;namespace HelloWorld.Countries {
     class ProxyCountry : ICountry {
         private ICountry Country { get; set; }
 
@@ -12,7 +11,6 @@ namespace HelloWorld.Countries {
         }
 
         public string getHelloMessage() {
-            Console.WriteLine("____Acces to country___");
             return Country.getHelloMessage();
         }
     }

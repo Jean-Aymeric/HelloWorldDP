@@ -6,7 +6,9 @@ namespace Main {
         static void Main() {
             FacadeHelloWorld facadeHelloWorld = FacadeHelloWorld.getInstance();
 
-            Console.WriteLine(facadeHelloWorld.makeByParse("FR :) :) - *").getHelloMessage());
+            Console.WriteLine(facadeHelloWorld.makeByParse("uk Smiley * - *").getHelloMessage());
+            Console.WriteLine(facadeHelloWorld.makeByParse("Indonesia Smiley / /").getHelloMessage());
+            
             foreach (string countryName in facadeHelloWorld.getFactoryNames()) {
                 Console.WriteLine(facadeHelloWorld.make(countryName).getHelloMessage());
             }
@@ -25,7 +27,7 @@ namespace Main {
             foreach (string countryName in facadeHelloWorld.getFactoryNames()) {
                 Console.WriteLine(facadeHelloWorld.make(countryName).getHelloMessage());
             }
-            
+            */
             Console.ReadLine();
         }
     }

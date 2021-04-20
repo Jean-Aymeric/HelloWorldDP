@@ -90,6 +90,12 @@
     <Compile Include="HelloWorld\Countries\IGetDate.cs" />
     <Compile Include="HelloWorld\Countries\IGetHello.cs" />
     <Compile Include="HelloWorld.cs" />
+    <Compile Include="HelloWorld\Interpreter\ChainOfResponsability\CountryTokenHandler.cs" />
+    <Compile Include="HelloWorld\Interpreter\ChainOfResponsability\DecoratorSimpleTokenHandler.cs" />
+    <Compile Include="HelloWorld\Interpreter\ChainOfResponsability\ErrorTokenHandler.cs" />
+    <Compile Include="HelloWorld\Interpreter\ChainOfResponsability\DecoratorTokenHandler.cs" />
+    <Compile Include="HelloWorld\Interpreter\ChainOfResponsability\TokenHandler.cs" />
+    <Compile Include="HelloWorld\Interpreter\ChainOfResponsability\TokenHandlerChain.cs" />
     <Compile Include="HelloWorld\Interpreter\Context.cs" />
     <Compile Include="HelloWorld\Interpreter\Error.cs" />
     <Compile Include="HelloWorld\Interpreter\ErrorExpression.cs" />
