@@ -1,4 +1,5 @@
 ﻿using HelloWorld.AbstractFactory;
+using HelloWorld.Command;
 using HelloWorld.Interpreter;
 using System.Collections.Generic;
 
@@ -69,6 +70,14 @@ namespace HelloWorld {
 
         public List<string> getFactoryNames() {
             return this.factory.getFactoryNames();
+        }
+
+        public void displayConsole(ICountry country) {
+            new Displayer(new ConsoleCommand(country)).display();
+        }
+
+        public void displayPopup(ICountry country) {
+            new Displayer(new PopupCommand(country)).display();
         }
     }
 }
