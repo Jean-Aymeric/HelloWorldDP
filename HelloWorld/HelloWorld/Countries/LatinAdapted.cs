@@ -1,6 +1,4 @@
-﻿using HelloWorld.BehaviorGetDate;
-using HelloWorld.BehaviorGetHello;
-using HelloWorld.Old;
+﻿using HelloWorld.Old;
 
 namespace HelloWorld.Countries {
     class LatinAdapted : BridgeCountry {

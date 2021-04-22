@@ -1,6 +1,4 @@
-﻿using HelloWorld.AbstractFactory;
-
-namespace HelloWorld.Interpreter {
+﻿namespace HelloWorld.Interpreter {
     class ErrorExpression : IExpression {
 
         public void Interpreter(Context context) {
